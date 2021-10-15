@@ -56,19 +56,23 @@
 }
 
 @media screen and (min-width: 768px) {
+  .imagenLogotipo{
+    display: block;
+    width: 200px;  
+  }
+  
+  .imagenPrincipal {
+    height: 70vh;
+  }
+  
   .imagenModelo {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .imagenLogotipo{
-    display: block;
-    width: 200px;  
-  }
-
   .imagenPrincipal {
-    height: 66vh;
+    height: 70vh;
   }
   
   .imagenPrincipalDelProducto{
