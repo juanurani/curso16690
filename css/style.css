@@ -51,20 +51,6 @@ button {
   }
 }
 
-.divBotonVerMas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 0px;
-}
-
 .divPrendas {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,9 +161,6 @@ button {
 }
 
 @media screen and (min-width: 1080px) {
-  .divBotonVerMas {
-    padding-top: 50px;
-  }
   .divPrendas {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -276,7 +259,7 @@ button {
 }
 
 .imagenLogotipo {
-  width: 150px;
+  display: none;
 }
 
 .imagenPrincipal {
@@ -345,6 +328,7 @@ button {
 
 @media screen and (min-width: 1080px) {
   .imagenLogotipo {
+    display: block;
     width: 200px;
   }
   .imagenPrincipal {

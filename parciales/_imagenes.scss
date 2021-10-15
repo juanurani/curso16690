@@ -1,5 +1,5 @@
 .imagenLogotipo{
-  width: 150px;  
+  display: none;  
 }
 
 .imagenPrincipal {
@@ -63,6 +63,7 @@
 
 @media screen and (min-width: 1080px) {
   .imagenLogotipo{
+    display: block;
     width: 200px;  
   }
 
