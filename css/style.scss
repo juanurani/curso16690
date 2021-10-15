@@ -1,0 +1,139 @@
+/* Fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* ------ */
+/* Variables */
+
+/* Colores */
+$primario: #000000;
+$secundario: #EEEEEE;
+$hover: rgb(34, 34, 34);
+
+/* Sombras */
+$boxShadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+/* ------ */
+/* Mixings */
+
+/* Flex Column Center */
+@mixin flexColumnCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------ */
+/* Parciales */
+
+@import "../parciales/botones";
+@import "../parciales/div";
+@import "../parciales/footer";
+@import "../parciales/imagenes";
+@import "../parciales/main";
+@import "../parciales/nav";
+@import "../parciales/titulos";
+
+/* ------ */
+/* Todo */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ------ */
+/* Body */
+
+body{
+    background-color: $secundario;
+}
+
+/* ------ */
+/* Generales */
+
+.espacioEntreSecciones{
+    margin-bottom: 25px;
+}
+
+/* ------ */
+/* Textos */
+
+.textoGrande{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 0px 10px 20px 10px;
+}
+
+.texto{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/* ------ */
+/* Listas */
+
+.listaDeTalles{
+    list-style-type: none;
+    font-weight: 800;
+}
+
+/* ------ */
+/* Tabla talles */
+
+.tablaDeTalles{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th{
+    font-weight: 800;
+}
+
+td{
+    font-weight: 600;
+}
+
+td, th{
+    padding: 10px;
+}
+
+/* ------ */
+/* Formulario de contacto */
+
+.formularioDeContacto{
+    width: 300px;
+    text-align: center;
+    margin: 0px auto 50px auto;
+    border: 2px solid black;
+}
+
+/* ------ */
+/* Media queries 1024px*/
+
+@media screen and (min-width: 1080px) {
+
+/* ------ */
+/* Generales */
+
+.espacioEntreSecciones{
+    margin-bottom: 50px;
+}
+
+/* ------ */
+/* texto */
+
+.textoGrande{
+    font-size: 20px;
+}
+
+/* ------ */
+/* Formulario de contacto */
+
+.formularioDeContacto{
+    width: 500px;
+}
+}

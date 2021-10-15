@@ -1,0 +1,56 @@
+.footer{
+    @include flexColumnCenter();
+    text-align: center;
+    width: 100%;
+    padding: 30px 60px 30px 60px;
+    background-color: $primario;
+    color: $secundario;
+    font-weight: bold;
+}
+
+.footerInformacion{
+    margin-bottom: 25px;
+}
+
+.footer p{
+    padding-bottom: 10px;
+}
+
+/* ------ */
+/* Suscribirse */
+
+.textoSuscripcion{
+    padding: 0px 10px 10px 10px;
+}
+
+.fieldsetSuscripcion{
+    border: none;
+}
+
+.emailSuscripcion{
+    width: 200px;
+    height: 30px;
+    border: 1px solid $primario;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.enviarSuscripcion{
+    width: 100px;
+    height: 30px;
+    border: 1px solid $primario;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1080px) {
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px 100px 50px 100px;
+    }
+
+    .footerInformacion{
+        margin-bottom: 0px;
+    }
+
+}
