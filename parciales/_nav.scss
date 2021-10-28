@@ -1,6 +1,7 @@
 /* Nav */
 .navegacion {
   @include flexColumnCenter();
+  position: relative;
   flex-wrap: wrap;
   text-align: center;
   background-color: $primario;
