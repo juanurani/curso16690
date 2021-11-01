@@ -492,6 +492,9 @@ button {
 }
 
 @media screen and (min-width: 990px) {
+  .navegacion ul {
+    padding: 0;
+  }
   .contenidoNavbar {
     padding: 0;
   }
