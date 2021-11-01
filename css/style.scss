@@ -1,5 +1,4 @@
 // Fuente
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 
@@ -7,13 +6,11 @@
 // Variables
 
 // Colores
-
 $primario: #000000;
 $secundario: #EEEEEE;
 $hover: rgb(34, 34, 34);
 
 // Sombras
-
 $boxShadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
 
@@ -21,7 +18,6 @@ $boxShadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 // Mixings
 
 // Flex Row Center
-
 @mixin flexRowCenter{
     display: flex;
     flex-direction: row;
@@ -29,7 +25,6 @@ $boxShadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
 // Flex Column Center
-
 @mixin flexColumnCenter {
     display: flex;
     flex-direction: column;

@@ -6,6 +6,10 @@
   background-color: $primario;
 }
 
+.navegacion ul{
+  padding-top: 16px;
+}
+
 .navegacion ul li:hover {
   background-color: $hover;
 }

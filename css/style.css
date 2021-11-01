@@ -454,6 +454,10 @@ button {
   background-color: #000000;
 }
 
+.navegacion ul {
+  padding-top: 16px;
+}
+
 .navegacion ul li:hover {
   background-color: #222222;
 }
@@ -527,7 +531,7 @@ button {
 
 .tituloSecundario {
   font-size: 25px;
-  margin-bottom: 20px;
+  margin: 0px 10px 20px 10px;
   font-weight: 600;
 }
 
