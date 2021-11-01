@@ -1,7 +1,6 @@
-/* Nav */
+// Nav
 .navegacion {
   @include flexColumnCenter();
-  position: relative;
   flex-wrap: wrap;
   text-align: center;
   background-color: $primario;
@@ -17,7 +16,10 @@
   text-decoration: none;
 }
 
-/* Menú de navegación */
+
+// ------------------
+// Menú de navegación
+
 .menu {
   @include flexColumnCenter();
   list-style: none;
@@ -28,19 +30,29 @@
   padding: 20px 30px;
 }
 
-/* Subnav */
+
+// ------
+// Subnav
+
 .submenu {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  /* Nav */
+@media screen and (min-width: 990px) {
+  // Nav
+  .contenidoNavbar{
+    padding: 0;
+  }
+
   .menu {
      flex-direction: row;
      justify-content: center;
   }
 
-  /* Subnav */
+
+  // ------
+  // Subnav
+  
   .submenu {
     display: none;
     position: absolute;

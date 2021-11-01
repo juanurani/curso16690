@@ -1,27 +1,36 @@
 .tituloSeccion {
     font-size: 40px;
     margin: 25px 10px 25px 10px;
+    font-weight: 800;
 }
 
 .tituloSecundario {
   font-size: 25px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .tituloProductos {
   font-size: 40px;
   margin: 20px 0px 20px 0px;
+  font-weight: 600;
 }
 
 .tituloPrendasPrincipales {
   font-size: 30px;
   margin-top: 25px;
+  font-weight: 600;
 }
 
 .titulo404 {
   font-size: 40px;
   margin: 25px 0 25px 0;
+  font-weight: 800;
 }
+
+
+// --------------------
+// Media querie 1080px
 
 @media screen and (min-width: 1080px) {
   .tituloSeccion {

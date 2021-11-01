@@ -11,13 +11,17 @@ button {
 
 .buttonProductos {
   width: 150px;
-  margin-top: 10px;
+  margin: 10px 0px;
 }
 
 .button404 {
   width: 150px;
   margin: 0;
 }
+
+
+// --------------------
+// Media querie 1080px
 
 @media screen and (min-width: 1080px) {
   button {

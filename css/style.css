@@ -1,15 +1,4 @@
-@charset "UTF-8";
-/* Fuente */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
-/* ------ */
-/* Variables */
-/* Colores */
-/* Sombras */
-/* ------ */
-/* Mixings */
-/* Flex Column Center */
-/* ------ */
-/* Parciales */
 button {
   background-color: #000000;
   border-radius: 50px;
@@ -24,7 +13,7 @@ button {
 
 .buttonProductos {
   width: 150px;
-  margin-top: 10px;
+  margin: 10px 0px;
 }
 
 .button404 {
@@ -49,6 +38,20 @@ button {
     width: 200px;
     margin-bottom: 50px;
   }
+}
+
+.contenidoNavbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
 }
 
 .divPrendas {
@@ -161,7 +164,13 @@ button {
 }
 
 @media screen and (min-width: 1080px) {
+  .contenidoNavbar {
+    padding: 0;
+  }
   .divPrendas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -171,6 +180,9 @@ button {
             justify-content: center;
   }
   .divModelos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -203,10 +215,12 @@ button {
           align-items: center;
   text-align: center;
   width: 100%;
-  padding: 30px 60px 30px 60px;
+  padding: 30px;
   background-color: #000000;
   color: #EEEEEE;
   font-weight: bold;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .footerInformacion {
@@ -214,13 +228,7 @@ button {
 }
 
 .footer p {
-  padding-bottom: 10px;
-}
-
-/* ------ */
-/* Suscribirse */
-.textoSuscripcion {
-  padding: 0px 10px 10px 10px;
+  margin-bottom: 10px;
 }
 
 .fieldsetSuscripcion {
@@ -248,6 +256,9 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -258,13 +269,11 @@ button {
   }
 }
 
-.imagenLogotipo {
-  display: none;
-}
-
 .imagenPrincipal {
   width: 100%;
   height: 60vh;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .imagenPrincipalDelProducto {
@@ -278,7 +287,7 @@ button {
 }
 
 .imagenModelo {
-  width: 90%;
+  width: 60%;
   margin: 20px 0px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -321,23 +330,17 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .imagenPrincipal {
-    width: 100%;
-    height: 80vh;
-  }
-  .imagenLogotipo {
-    display: block;
-    width: 200px;
-  }
   .imagenModelo {
-    width: 50%;
+    width: 400PX;
   }
 }
 
 @media screen and (min-width: 1080px) {
+  .imagenNav {
+    margin: 0;
+  }
   .imagenPrincipal {
-    width: 100%;
-    height: 80vh;
+    height: 70vh;
   }
   .imagenPrincipalDelProducto {
     width: 300px;
@@ -353,7 +356,7 @@ button {
   }
   .imagenesDeProductos {
     width: 300px;
-    margin: 0px 40px;
+    margin: 0px 10px;
   }
   .imagenesDeProductos:hover {
     -webkit-transform: scale(1.1);
@@ -434,7 +437,6 @@ button {
           align-items: center;
 }
 
-/* Nav */
 .navegacion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,7 +448,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
@@ -463,7 +464,6 @@ button {
   text-decoration: none;
 }
 
-/* Menú de navegación */
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,13 +483,14 @@ button {
   padding: 20px 30px;
 }
 
-/* Subnav */
 .submenu {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  /* Nav */
+@media screen and (min-width: 990px) {
+  .contenidoNavbar {
+    padding: 0;
+  }
   .menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -499,7 +500,6 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* Subnav */
   .submenu {
     display: none;
     position: absolute;
@@ -522,26 +522,31 @@ button {
 .tituloSeccion {
   font-size: 40px;
   margin: 25px 10px 25px 10px;
+  font-weight: 800;
 }
 
 .tituloSecundario {
   font-size: 25px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .tituloProductos {
   font-size: 40px;
   margin: 20px 0px 20px 0px;
+  font-weight: 600;
 }
 
 .tituloPrendasPrincipales {
   font-size: 30px;
   margin-top: 25px;
+  font-weight: 600;
 }
 
 .titulo404 {
   font-size: 40px;
   margin: 25px 0 25px 0;
+  font-weight: 800;
 }
 
 @media screen and (min-width: 1080px) {
@@ -562,8 +567,6 @@ button {
   }
 }
 
-/* ------ */
-/* Todo */
 * {
   margin: 0px;
   padding: 0px;
@@ -573,20 +576,23 @@ button {
   scroll-behavior: smooth;
 }
 
-/* ------ */
-/* Body */
 body {
   background-color: #EEEEEE;
 }
 
-/* ------ */
-/* Generales */
+p {
+  margin: 0;
+}
+
+ul, .navbar-brand, .navbar {
+  margin: 0;
+  padding: 0;
+}
+
 .espacioEntreSecciones {
   margin-bottom: 25px;
 }
 
-/* ------ */
-/* Textos */
 .textoGrande {
   font-size: 15px;
   font-weight: 800;
@@ -598,56 +604,37 @@ body {
   margin-bottom: 10px;
 }
 
-/* ------ */
-/* Listas */
-.listaDeTalles {
-  list-style-type: none;
-  font-weight: 800;
-}
-
-/* ------ */
-/* Tabla talles */
 .tablaDeTalles {
-  border-collapse: collapse;
   margin: 0 auto;
 }
 
-th {
+td {
   font-weight: 800;
 }
 
-td {
-  font-weight: 600;
-}
-
 td, th {
-  padding: 10px;
+  padding: 20px;
 }
 
-/* ------ */
-/* Formulario de contacto */
 .formularioDeContacto {
   width: 300px;
   text-align: center;
   margin: 0px auto 50px auto;
   border: 2px solid black;
+  padding: 1rem;
 }
 
-/* ------ */
-/* Media queries 1024px*/
+.accionesFormulario {
+  width: 70px;
+}
+
 @media screen and (min-width: 1080px) {
-  /* ------ */
-  /* Generales */
   .espacioEntreSecciones {
     margin-bottom: 50px;
   }
-  /* ------ */
-  /* texto */
   .textoGrande {
     font-size: 20px;
   }
-  /* ------ */
-  /* Formulario de contacto */
   .formularioDeContacto {
     width: 500px;
   }

@@ -1,30 +1,44 @@
-/* Fuente */
+// Fuente
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
-/* ------ */
-/* Variables */
 
-/* Colores */
+// ---------
+// Variables
+
+// Colores
+
 $primario: #000000;
 $secundario: #EEEEEE;
 $hover: rgb(34, 34, 34);
 
-/* Sombras */
+// Sombras
+
 $boxShadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
-/* ------ */
-/* Mixings */
 
-/* Flex Column Center */
+// -------
+// Mixings
+
+// Flex Row Center
+
+@mixin flexRowCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+// Flex Column Center
+
 @mixin flexColumnCenter {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* ------ */
-/* Parciales */
+
+// ---------
+// Parciales
 
 @import "../parciales/botones";
 @import "../parciales/div";
@@ -34,8 +48,9 @@ $boxShadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 @import "../parciales/nav";
 @import "../parciales/titulos";
 
-/* ------ */
-/* Todo */
+
+// ---------
+// Generales
 
 *{
     margin: 0px;
@@ -45,22 +60,26 @@ $boxShadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     scroll-behavior: smooth;
 }
 
-/* ------ */
-/* Body */
-
 body{
     background-color: $secundario;
 }
 
-/* ------ */
-/* Generales */
+p{
+    margin: 0;
+}
+
+ul, .navbar-brand, .navbar{
+    margin: 0;
+    padding: 0;
+  }
 
 .espacioEntreSecciones{
     margin-bottom: 25px;
 }
 
-/* ------ */
-/* Textos */
+
+// ------
+// Textos
 
 .textoGrande{
     font-size: 15px;
@@ -73,65 +92,60 @@ body{
     margin-bottom: 10px;
 }
 
-/* ------ */
-/* Listas */
 
-.listaDeTalles{
-    list-style-type: none;
-    font-weight: 800;
-}
-
-/* ------ */
-/* Tabla talles */
+// ---------------
+// Tabla de talles
 
 .tablaDeTalles{
-    border-collapse: collapse;
     margin: 0 auto;
 }
 
-th{
+td{
     font-weight: 800;
 }
 
-td{
-    font-weight: 600;
-}
-
 td, th{
-    padding: 10px;
+    padding: 20px;
 }
 
-/* ------ */
-/* Formulario de contacto */
+
+// ---------------------
+// Formulario de Contacto
 
 .formularioDeContacto{
     width: 300px;
     text-align: center;
     margin: 0px auto 50px auto;
     border: 2px solid black;
+    padding: 1rem;
 }
 
-/* ------ */
-/* Media queries 1024px*/
+.accionesFormulario{
+    width: 70px;
+}
+
+
+// --------------------
+// Media querie 1080px
 
 @media screen and (min-width: 1080px) {
 
-/* ------ */
-/* Generales */
+// ---------
+// Generales
 
 .espacioEntreSecciones{
     margin-bottom: 50px;
 }
 
-/* ------ */
-/* texto */
+// ------
+// Textos
 
 .textoGrande{
     font-size: 20px;
 }
 
-/* ------ */
-/* Formulario de contacto */
+// ---------------------
+// Formulario de Contacto
 
 .formularioDeContacto{
     width: 500px;
