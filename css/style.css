@@ -228,7 +228,7 @@ button {
 }
 
 .footer p {
-  margin-bottom: 10px;
+  margin: 0 10px 10px 10px;
 }
 
 .fieldsetSuscripcion {
@@ -251,7 +251,7 @@ button {
   height: 30px;
   border: 1px solid #000000;
   padding: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .enviarSuscripcion {
@@ -292,6 +292,9 @@ button {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .emailSuscripcion {
+    margin: 0px 10px 0px 0px;
   }
 }
 
@@ -566,7 +569,7 @@ button {
 
 .tituloProductos {
   font-size: 40px;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 10px 20px 10px;
   font-weight: 600;
 }
 
@@ -652,7 +655,7 @@ td, th {
 .formularioDeContacto {
   width: 300px;
   text-align: center;
-  margin: 0px auto 50px auto;
+  margin: 0px auto 25px auto;
   border: 2px solid black;
   padding: 1rem;
 }
@@ -670,6 +673,7 @@ td, th {
   }
   .formularioDeContacto {
     width: 500px;
+    margin: 0px auto 50px auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
